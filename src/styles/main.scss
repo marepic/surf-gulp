@@ -1,0 +1,30 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+$iphone: 375px;
+
+//colors
+$yellow:#FEDB3F;
+$gray: #666666;
+$black: #292929;
+$white: #fff;
+
+//z-idexes
+
+$z-fixed-menu: 100;
+
+@import "./_media";
+
+//normalize
+//@import "https:necolas.github.io/normalize.css/8.0.1/normalize.css";
+
+
+//setups
+@import "./_layout";
+
+//blocks
+@import "./blocks/*.scss";
