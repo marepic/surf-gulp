@@ -1,4 +1,4 @@
-(function () {
+(function() {
     const verticalAcco = () => {
         const links = document.querySelectorAll(".menu-acco__trigger");
         const body = document.querySelector('body');
@@ -62,4 +62,4 @@
 
     verticalAcco();
 
-}());   
+}())   

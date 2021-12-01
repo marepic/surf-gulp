@@ -34,7 +34,8 @@
     "sass": "^1.43.5"
   },
   "dependencies": {
-    "jquery": "^3.6.0",
+    "jquery": "3.6",
+    "latest": "^0.2.0",
     "normalize.css": "^8.0.1"
   }
 }

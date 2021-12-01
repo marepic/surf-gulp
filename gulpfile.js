@@ -50,11 +50,6 @@ task('styles', () => {
     .pipe(reload({ stream: true }));
 });
 
-const libs = [
-    'node_modules/jquery/dist/jquery.js',
-    'src/scripts/*.js'
-   ];
-
 task('scripts', () => {
     return src([...JS_LIBS, 'src/scripts/*.js'])
       .pipe(gulpif(env === 'dev', sourcemaps.init()))
@@ -66,6 +61,11 @@ task('scripts', () => {
       .pipe(gulpif(env === 'dev',sourcemaps.write()))
       .pipe(dest(DIST_PATH))
       .pipe(reload({ stream: true }));
+});
+
+task('img', () => {
+  return src('src/img/*')
+  .pipe(dest(`${DIST_PATH}/img`));
 });
 
 task('icons', () => {
@@ -101,13 +101,14 @@ task('watch', () => {
     watch('./src/styles/**/*.scss', series('styles'));
     watch('./src/*.html', series('copy:html'));
     watch('./src/scripts/*.js', series('scripts'));
-    watch('./src/img/icons/*.svg', series('icons'));
+    watch('./src/img/*', series('img'));
+    //watch('./src/img/icons/*.svg', series('icons'));
 });
  
 task('default',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons'),
+   parallel('copy:html', 'styles', 'scripts', 'img', 'icons'),
    parallel('watch', 'server')
  )
 );
@@ -115,5 +116,5 @@ task('default',
 task('build',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons'))
+   parallel('copy:html', 'styles', 'scripts', 'img', 'icons'))
 );

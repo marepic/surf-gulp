@@ -49,24 +49,14 @@
 .fullscreen-menu__close {
   display: block;
   position: absolute;
-  top: 3%;
-  right: -14%;
+  top: 2%;
+  right: -11%;
   width: rem(142px); cursor: pointer;
 }
 
 .hamburger__icon {
   width: rem(24px);
   height: rem(24px);
-}
-
-.menu--vertical {
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  
-  @include tablets {
-    display: block;
-  }
 }
 
 .menu__list--vertical {

@@ -12,7 +12,7 @@
         return errorFields.length == 0;
     }
 
-    $('.form').submit(e => {
+    $('.form').on('submit', e => {
         e.preventDefault();
 
         const form = $(e.currentTarget);
@@ -59,9 +59,9 @@
         }
     });
 
-    $(".app-submit-btn").click(e => {
+    $(".app-submit-btn").on('click', e => {
         e.preventDefault();
 
         $.fancybox.close();
     });
-}());
+}())

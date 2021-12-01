@@ -10,8 +10,14 @@
 }
 
 .player-section__container {
-    width: rem(662px);
-    height: rem(391.82px);
+    width: rem(745px);
+    height: rem(450px);
+
+
+    @include tablets{
+        width: rem(626px);
+        height: rem(388px);
+    }
 
     @include phones {
         width: rem(333px);
@@ -39,7 +45,7 @@
     right: 0;
     bottom: 0;
     cursor: pointer;
-    background: url(../img/player.png) center center/cover no-repeat;
+    background: url(./img/player.png) center center/cover no-repeat;
 }
 
 .play__icon {

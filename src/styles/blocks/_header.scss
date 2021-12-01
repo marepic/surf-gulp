@@ -16,8 +16,19 @@
 .menu {
   margin: 0 30px;
   padding-top: 5px;
+
   @include tablets {
     display: none;
+  }
+}
+
+.menu--vertical {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  
+  @include tablets {
+    display: block;
   }
 }
 

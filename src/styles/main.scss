@@ -17,14 +17,14 @@ $white: #fff;
 
 $z-fixed-menu: 100;
 
-@import "./_media";
+@import "./blocks/_media";
 
 //normalize
 //@import "https:necolas.github.io/normalize.css/8.0.1/normalize.css";
 
 
 //setups
-@import "./_layout";
+@import "./blocks/_layout";
 
 //blocks
 @import "./blocks/*.scss";

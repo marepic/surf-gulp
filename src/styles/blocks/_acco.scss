@@ -1,5 +1,5 @@
 .acco__section {
-    background: url(../img/acco-bg.jpg) center top no-repeat;
+    background: url(./img/acco-bg.jpg) center top no-repeat;
     background-size: cover;
     color: #fff;
     max-width: 100%;
@@ -54,19 +54,19 @@
     
 
     &--longboard{
-    background: url(../img/longboard.jpg);
+    background: url(./img/longboard.jpg);
     background-position: center center;
     background-size: cover;
     }
 
     &--shortboard{
-     background: url(../img/shortboard.jpg);
+     background: url(./img/shortboard.jpg);
     background-position-x: center;
     background-size: cover;
     }
 
     &--softtop{
-    background: url(../img/softtop.jpg);
+    background: url(./img/softtop.jpg);
     background-position-x: center;
     background-size: cover;
     }

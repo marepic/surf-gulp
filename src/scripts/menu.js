@@ -1,4 +1,4 @@
-(function () {
+(function() {
     let button = document.querySelector('.hamburger');
     let buttonClose = document.querySelector('.fullscreen-menu__close');
     let menu = document.querySelector('.fullscreen-menu');
@@ -13,4 +13,4 @@
 
     menu.addEventListener('click', _toggleMenu)
     button.addEventListener('click', _toggleMenu)
-}());
+}())

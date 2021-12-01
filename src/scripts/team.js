@@ -1,4 +1,4 @@
-(function () {
+(function() {
     const openItem = item => {
         const container = item.closest(".team__item");
         const contentBlock = container.find(".team__content");
@@ -17,7 +17,7 @@
         items.height(0);
     }
 
-    $('.team__title').click(e => {
+    $('.team__title').on('click', e => {
         const $this = $(e.currentTarget);
         const container = $this.closest('.team');
         const elemContainer = $this.closest(".team__item");
@@ -29,4 +29,4 @@
             openItem($this);
         } 
     });
-}());
+}())
